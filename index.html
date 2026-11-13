@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- kredit-maliki: Template oleh Maliki Saputra (@malikisaputra) — https://malikisaputra.biz.id. Lisensi MIT + wajib atribusi (lihat LICENSE). -->
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template Carousel Quotes</title>
+<meta name="description" content="Editor carousel quotes Instagram 1080x1350 dengan 3 gaya, unduh PNG & ZIP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fontLink" rel="stylesheet" crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;700&family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="merek"><span class="titik"></span> Carousel Quotes</div>
+  <div class="aksi-atas">
+    <button type="button" id="btnImpor" class="btn tipis">Impor JSON</button>
+    <button type="button" id="btnEkspor" class="btn tipis">Ekspor JSON</button>
+    <button type="button" id="btnZip" class="btn utama">Unduh semua (.zip)</button>
+  </div>
+  <input type="file" id="fileJson" accept="application/json,.json" hidden>
+</header>
+
+<main class="tata">
+  <aside class="panel" aria-label="Isi carousel">
+    <section class="grup">
+      <h2>Gaya</h2>
+      <div class="pilih-gaya" role="radiogroup" aria-label="Pilih gaya">
+        <button type="button" role="radio" data-gaya="editorial" class="gaya-opsi"><span class="cth cth-editorial">Aa</span>Editorial</button>
+        <button type="button" role="radio" data-gaya="neon" class="gaya-opsi"><span class="cth cth-neon">01</span>Bold Neon</button>
+        <button type="button" role="radio" data-gaya="teduh" class="gaya-opsi"><span class="cth cth-teduh">✦</span>Teduh</button>
+      </div>
+    </section>
+
+    <section class="grup">
+      <h2>Identitas</h2>
+      <label>Judul seri<input id="fSeri" maxlength="40"></label>
+      <div class="dua">
+        <label>Nama<input id="fNama" maxlength="40"></label>
+        <label>Handle<input id="fHandle" maxlength="40"></label>
+      </div>
+      <div class="foto-baris">
+        <div id="fotoPrev" class="foto-prev" aria-hidden="true"></div>
+        <label class="btn tipis file-btn">Unggah foto/logo<input type="file" id="fFoto" accept="image/*" hidden></label>
+        <button type="button" id="btnHapusFoto" class="btn tipis">Hapus</button>
+      </div>
+    </section>
+
+    <section class="grup">
+      <h2>Sampul</h2>
+      <label>Judul sampul<textarea id="fSampulJudul" rows="2" maxlength="90"></textarea></label>
+      <label>Subjudul<input id="fSampulSub" maxlength="70"></label>
+    </section>
+
+    <section class="grup">
+      <div class="judul-grup"><h2>Slide isi</h2><button type="button" id="btnTambah" class="btn tipis">+ Tambah slide</button></div>
+      <ol id="daftarSlide" class="daftar"></ol>
+    </section>
+
+    <section class="grup">
+      <h2>Penutup (CTA)</h2>
+      <label>Judul penutup<input id="fPenutupJudul" maxlength="60"></label>
+      <label>Ajakan<textarea id="fPenutupAjakan" rows="2" maxlength="120"></textarea></label>
+    </section>
+
+    <button type="button" id="btnReset" class="btn tipis bahaya">Kembalikan contoh</button>
+    <p class="kredit-maliki">Template oleh <a href="https://malikisaputra.biz.id" target="_blank" rel="noopener">@malikisaputra</a></p>
+  </aside>
+
+  <section class="pratinjau" aria-label="Pratinjau slide">
+    <div class="info-prev"><span id="infoJumlah"></span> · 1080×1350 px · <span id="status" role="status">Draft tersimpan otomatis</span></div>
+    <div id="deret" class="deret"></div>
+  </section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

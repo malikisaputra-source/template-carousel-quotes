@@ -1,0 +1,21 @@
+{
+  "gaya": "editorial",
+  "seri": "Catatan Pagi",
+  "nama": "Rumah Kata",
+  "handle": "@rumahkata.id",
+  "sampul": {
+    "judul": "5 pengingat kecil untuk hari yang berat",
+    "sub": "Geser pelan-pelan, simpan untuk nanti."
+  },
+  "slides": [
+    { "teks": "Sedikit demi sedikit, lama-lama menjadi bukit.", "sumber": "Peribahasa Indonesia" },
+    { "teks": "Hari ini tidak harus sempurna. Cukup kamu jalani dengan jujur.", "sumber": "Catatan Pagi" },
+    { "teks": "Istirahat bukan berarti menyerah. Itu cara mengisi ulang langkah.", "sumber": "Catatan Pagi" },
+    { "teks": "Air tenang menghanyutkan; diam yang terarah sering paling kuat.", "sumber": "Diolah dari peribahasa" },
+    { "teks": "Mulai dari yang bisa kamu kerjakan sekarang, bukan dari yang kamu khawatirkan.", "sumber": "Catatan Pagi" }
+  ],
+  "penutup": {
+    "judul": "Semoga harimu lebih ringan.",
+    "ajakan": "Simpan, bagikan ke yang butuh, dan follow untuk pengingat berikutnya."
+  }
+}

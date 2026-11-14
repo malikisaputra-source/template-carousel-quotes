@@ -60,7 +60,7 @@ Warna tiap gaya ada di `style.css` blok `.g-editorial`, `.g-neon`, `.g-teduh`. F
 - ui-ux-pro-max — https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (MIT menurut GitHub API, dicek 6 Nov 2026)
 
 ## Lisensi & kredit
-MIT + syarat tambahan (lihat `LICENSE`). Contoh isi adalah tulisan fiktif dan peribahasa umum.
+Lisensi Nonkomersial Maliki Studio (lihat `LICENSE`). Contoh isi adalah tulisan fiktif dan peribahasa umum.
 
 Dibuat oleh Maliki Studio — malikisaputra.biz.id, follow TikTok/IG @malikisaputra
 
